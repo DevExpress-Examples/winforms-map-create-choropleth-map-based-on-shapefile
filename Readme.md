@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* **[Form1.cs](./CS/Colorizer/Form1.cs) (VB: [Form1.vb](./VB/Colorizer/Form1.vb))**
+<!-- default file list end -->
 # How to colorize map contours loaded from Shapefiles using the Choropleth colorizer 
 
 
