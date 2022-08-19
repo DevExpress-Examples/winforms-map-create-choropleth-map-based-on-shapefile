@@ -35,3 +35,7 @@ If you want to display information on what each color means, create a [Color Sca
 * [How to load data from a KML file](https://github.com/DevExpress-Examples/how-to-load-data-from-a-kml-file-t140303)
 * [How to load SVG file content to the Map Control](https://github.com/DevExpress-Examples/how-to-load-svg-file-content-to-the-map-control-t312482)
 * [How to load data from a SQL geometry data-source](https://github.com/DevExpress-Examples/how-to-load-data-from-a-sql-geometry-data-source-t175898)
+* [How to configure a range distribution of ChoroplethColorizer](https://github.com/DevExpress-Examples/how-to-configure-a-range-distribution-of-choroplethcolorizer-t142434)
+* [How to colorize map contours loaded from Shapefiles using the graph colorizer](https://github.com/DevExpress-Examples/how-to-colorize-map-contours-loaded-from-shapefiles-using-the-graph-colorizer-e4723)
+* [How to colorize map shapes using the ShapeAttributeToColorKeyProvider class](https://github.com/DevExpress-Examples/how-to-colorize-map-shapes-using-the-shapeattributetocolorkeyprovider-class-t140151)
+* [How to implement a custom colorizer](https://github.com/DevExpress-Examples/how-to-implement-a-custom-colorizer-e4753)
