@@ -1,5 +1,7 @@
-﻿Namespace XtraMap_ShapefileDataAdapter
-    Partial Public Class Form1
+Namespace XtraMap_ShapefileDataAdapter
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,22 +12,22 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+'#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
         ''' </summary>
         Private Sub InitializeComponent()
-            Dim vectorItemsLayer1 As New DevExpress.XtraMap.VectorItemsLayer()
+            Dim vectorItemsLayer1 As DevExpress.XtraMap.VectorItemsLayer = New DevExpress.XtraMap.VectorItemsLayer()
             Me.mapControl1 = New DevExpress.XtraMap.MapControl()
-            DirectCast(Me.mapControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.mapControl1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' mapControl1
@@ -46,15 +48,11 @@
             Me.Controls.Add(Me.mapControl1)
             Me.Name = "Form1"
             Me.Text = "Form1"
-            DirectCast(Me.mapControl1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.mapControl1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
-
         End Sub
 
-        #End Region
-
+'#End Region
         Private mapControl1 As DevExpress.XtraMap.MapControl
-
     End Class
 End Namespace
-
