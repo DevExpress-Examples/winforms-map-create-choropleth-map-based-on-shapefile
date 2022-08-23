@@ -10,13 +10,13 @@ This example demonstrates how to fill map shape contours with a specific color d
 
 ![Resulting map](Images/resulting-map.png)
 
-To paint the map as in the image above, assign a [ChoroplethColorizer](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ChoroplethColorizer?p=netframework) object to the [VectorItemsLayer.Colorizer](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.VectorItemsLayer.Colorizer) property.
+To paint the map as in the image above, assign a [`ChoroplethColorizer`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ChoroplethColorizer?p=netframework) object to the [`VectorItemsLayer.Colorizer`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.VectorItemsLayer.Colorizer) property.
 
-Then, specify an attribute from a shapefile used to define the shape color. To do this, create a [ShapeAttributeValueProvider](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ShapeAttributeValueProvider) object and specify its [AttributeName](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ShapeAttributeValueProvider.AttributeName) property. Then, assign the provider to the [ChoroplethColorizer.ValueProvider](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ChoroplethColorizer.ValueProvider) property.
+Then, specify an attribute from a shapefile used to define the shape color. To do this, create a [`ShapeAttributeValueProvider`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ShapeAttributeValueProvider) object and specify its [`AttributeName`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ShapeAttributeValueProvider.AttributeName) property. Then, assign the provider to the [`ChoroplethColorizer.ValueProvider`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ChoroplethColorizer.ValueProvider) property.
 
-Split attribute values into ranges that define color boundaries. To do this, populate the [ChoroplethColorizer.RangeStops](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ChoroplethColorizer.RangeStops) collection with numeric range stops.
+Split attribute values into ranges that define color boundaries. To do this, populate the [`ChoroplethColorizer.RangeStops`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ChoroplethColorizer.RangeStops) collection with numeric range stops.
 
-Populate the [MapColorizer.ColorItems](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ChoroplethColorizer.ColorItems) colors with items that define colors used to paint shapes. The colorizer automatically associates each color with the specified data range to colorize map shapes.
+Populate the [`MapColorizer.ColorItems`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ChoroplethColorizer.ColorItems) colors with items that define colors used to paint shapes. The colorizer automatically associates each color with the specified data range to colorize map shapes.
 
 If you want to display information on what each color means, create a [Color Scale legend](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ColorScaleLegend).
 
