@@ -6,7 +6,7 @@
 
 # Map for WinForms - Create a Choropleth Map Based on Shapes Loaded From a Shapefile
 
-This example demonstrates how to fill map shape contours with a specific color depending on GDP data from a shapefile (_Countries.dbf_, _Countries.shp_). To load data from a shapefile, use the [ShapefileDataAdapter](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ShapefileDataAdapter?p=netframework).
+This example demonstrates how to fill map shape contours with a specific color depending on GDP data from a shapefile (_Countries.dbf_, _Countries.shp_). To load data from a shapefile, use the [`ShapefileDataAdapter`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ShapefileDataAdapter?p=netframework).
 
 ![Resulting map](Images/resulting-map.png)
 
