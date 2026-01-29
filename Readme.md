@@ -4,26 +4,40 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
+
+# How to Colorize Map Contours Loaded from Shapefiles Using the Choropleth Colorizer
+
+This example paints each map contour in a specific color based on GDP data loaded from Shapefiles (**Countries.dbf**, **Countries.shp**).
+
+To colorize map shapes, create a colorizer (for example, a **choropleth colorizer** or **graph colorizer**) and assign it to the [`VectorFileLayer.Colorizer`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.VectorItemsLayer.Colorizer) property.
+
+In this example, the `CreateColorizer` method is used to create and configure a choropleth colorizer.
+
+### Accessing GDP Data from Shapefiles
+
+Follow the steps below to retrieve GDP values from Shapefiles.
+
+1. Create a [`ShapeAttributeValueProvider`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ShapeAttributeValueProvider) and use the [`ShapeAttributeValueProvider.AttributeName`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ShapeAttributeValueProvider.AttributeName) property to specify the attribute name.
+2. Assign the provider to the [`ChoroplethColorizer.ValueProvider`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ChoroplethColorizer.ValueProvider) property.
+3. Add range stops to the [`ChoroplethColorizer.RangeStops`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ChoroplethColorizer.RangeStops) collection to define data ranges.
+4. Specify colors for each range with the [`MapColorizer.ColorItems`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.MapColorizer.ColorItems) collection (`GenericColorizerColorItemCollection<ColorizerColorItem>`).
+
+The colorizer automatically associates each color with the corresponding data range and applies it to map shapes.
+
+### Adding a Color Scale Legend
+
+To display information about what each color represents:
+
+1. Create a [`ColorScaleLegend`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ColorScaleLegend).
+2. Assign the target layer to the [`ColorScaleLegend.Layer`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ItemsLayerLegend.Layer) property.
+3. Assign the legend to the [`ChoroplethColorizer.Legend`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ChoroplethColorizer.Legend) property.
+4. Configure the legend header, description, and range stop format using the corresponding properties.
+
 <!-- default file list -->
-*Files to look at*:
+## Files to Review
 
-* **[Form1.cs](./CS/Colorizer/Form1.cs) (VB: [Form1.vb](./VB/Colorizer/Form1.vb))**
+**[Form1.cs](./CS/Colorizer/Form1.cs) (VB: [Form1.vb](./VB/Colorizer/Form1.vb))**
 <!-- default file list end -->
-# How to colorize map contours loaded from Shapefiles using the Choropleth colorizer 
-
-
-<p>This example demonstrates how to paint each map contour in a specific color depending on GDP data from Shapefiles (<strong>Countries.dbf</strong>, <strong>Countries.shp</strong>).</p>
-
-
-<h3>Description</h3>
-
-For this, create a colorizer (a choropleth colorizer or graph colorizer) and assign it to the <a href="https://documentation.devexpress.com/#WindowsForms/DevExpressXtraMapVectorItemsLayer_Colorizertopic">VectorFileLayer.Colorizer</a>&nbsp;property.<br />In this example, the CreateColorizer method is used to create a choropleth colorizer and customize its properties.
-<p>&nbsp;</p>
-<p>To access GDP information from Shapefiles, assign a <a href="https://documentation.devexpress.com/#WindowsForms/clsDevExpressXtraMapShapeAttributeValueProvidertopic">ShapeAttributeValueProvider</a> object with the specified attribute name (<a href="https://documentation.devexpress.com/#WindowsForms/DevExpressXtraMapShapeAttributeValueProvider_AttributeNametopic">ShapeAttributeValueProvider.AttributeName</a>) to the <a href="https://documentation.devexpress.com/#WindowsForms/DevExpressXtraMapChoroplethColorizer_ValueProvidertopic">ChoroplethColorizer.ValueProvider</a> property.<br />Then, add range stops (data splits in ranges) for the colorizer to the <strong>DoubleCollection</strong> object, which can be accessed via the <a href="https://documentation.devexpress.com/#WindowsForms/DevExpressXtraMapChoroplethColorizer_RangeStopstopic">ChoroplethColorizer.RangeStops</a> property.<br />Finally, specify the desired set of colors in the&nbsp;<a href="https://documentation.devexpress.com/#WindowsForms/clsDevExpressXtraMapGenericColorizerItemCollection~T~topic">GenericColorizerColorItemCollection&lt;ColorizerColorItem&gt;</a> object, which is accessed via the <a href="https://documentation.devexpress.com/#WindowsForms/DevExpressXtraMapChoroplethColorizer_ColorItemstopic">MapColorizer.ColorItems</a> property. The colorizer automatically associates each color with the specified data range to colorize map shapes.</p>
-<p><br />If you wish to see information on what each color means when map shapes are colored by the colorizer, create a color scale legend. For this, create a <a href="https://documentation.devexpress.com/#WindowsForms/clsDevExpressXtraMapColorScaleLegendtopic">ColorScaleLegend</a> object,&nbsp;assign <strong>VectorFileLayer</strong>&nbsp;to the <a href="https://documentation.devexpress.com/#WindowsForms/DevExpressXtraMapItemsLayerLegend_Layertopic">ColorScaleLegend.Layer</a> property of the object and set the legend to the <a href="https://documentation.devexpress.com/#WindowsForms/DevExpressXtraMapChoroplethColorizer_Legendtopic">ChoroplethColorizer.Legend</a> property. After that, specify the legend description, header and range stop format using the corresponding legend properties.</p>
-
-<br/>
-
 
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
