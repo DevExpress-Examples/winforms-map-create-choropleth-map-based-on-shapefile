@@ -41,7 +41,7 @@ If you want to display information on what each color means, create a [Color Sca
 * [How to colorize map shapes using the ShapeAttributeToColorKeyProvider class](https://github.com/DevExpress-Examples/how-to-colorize-map-shapes-using-the-shapeattributetocolorkeyprovider-class-t140151)
 * [How to implement a custom colorizer](https://github.com/DevExpress-Examples/how-to-implement-a-custom-colorizer-e4753)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-map-create-choropleth-map-based-on-shapefile&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-map-create-choropleth-map-based-on-shapefile&~~~was_helpful=no)
 
